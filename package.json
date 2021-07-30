@@ -1,0 +1,29 @@
+{
+  "name": "suite5interview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igianop/Suite5Interview.git"
+  },
+  "author": "Giannis Giannopoulos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igianop/Suite5Interview/issues"
+  },
+  "homepage": "https://github.com/igianop/Suite5Interview#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "mongoose": "^5.13.5",
+    "nodemon": "^2.0.12"
+  }
+}
