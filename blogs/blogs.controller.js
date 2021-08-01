@@ -6,7 +6,7 @@ const { isNil, isEmpty } = require('lodash');
 const BlogsController = {
     async createBlog(req, res){
         const blog = new BlogsModel({
-            title: req.body.name,
+            title: req.body.title,
             articles: req.body.articles
         });
 
@@ -38,14 +38,14 @@ const BlogsController = {
     },
     async deleteBlogArticles(req, res){
         const blogs = await BlogsModel.find({ articles: req.params.id});
-        if(isEmpty(blog)){
+        if(isEmpty(blogs)){
             return res.status(404).json('Blog for given article not found');
         }
         const blogArticle = blogs[0].articles.indexOf(req.params.id);
             if(blogArticle > -1){
                 blogs[0].articles.splice(blogArticle, 1);
             }
-        const updatedBlog = await BlogsModel.findByIdAndUpdate({_id: blog[0]._id}, blog[0]);
+        const updatedBlog = await BlogsModel.findByIdAndUpdate({_id: blogs[0]._id}, blogs[0]);
         return res.status(200).json("Article in blog deleted");
     },
     async findBlog(req, res){

@@ -6,7 +6,7 @@ const moment = require('moment');
 const ArticlesController = {
     async createArticles(req, res){
         const article = new ArticlesModel({
-            title: req.body.name,
+            title: req.body.title,
             excerpt: req.body.excerpt,
             text: req.body.text,
             writer: req.body.writer,
@@ -49,7 +49,7 @@ const ArticlesController = {
     async findAllArticles(req, res){
         const page = Number.parseInt(req.query.page ? req.query.page : '0');
         const itemsPerPage = Number.parseInt(req.query.itemsPerPage ? req.query.itemsPerPage : '20');
-        const article = await ArticlesModel.find({ _id: req.params.id}).sort({ updatedAt: -1}).limit(itemsPerPage).skip(itemsPerPage * page).populate('writer');
+        const article = await ArticlesModel.find({}).sort({ updatedAt: -1}).limit(itemsPerPage).skip(itemsPerPage * page).populate('writer');
 
         if(isEmpty(article)){
             return res.status(404).json("Articles not found");
