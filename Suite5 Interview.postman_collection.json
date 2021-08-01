@@ -1,0 +1,481 @@
+{
+	"info": {
+		"_postman_id": "94245116-03a8-4db6-a91a-7b8a6b03acd9",
+		"name": "Suite5 Interview",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4000/writers/createWriter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Giannis Giannopoulos\",\n    \"age\":33,\n    \"email\":\"gianis@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/writers/createWriter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"writers",
+						"createWriter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/writers/createWriter second",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Giannis Giannopoulos\",\n    \"age\":33,\n    \"email\":\"gianis@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/writers/createWriter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"writers",
+						"createWriter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/writers/updateWriter/6106913a3d7c1c511e9094da",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \n    \"age\":35\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/writers/updateWriter/6106913a3d7c1c511e9094da",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"writers",
+						"updateWriter",
+						"6106913a3d7c1c511e9094da"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/writers/oneWriter/6106913a3d7c1c511e9094da",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/writers/oneWriter/6106913a3d7c1c511e9094da",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"writers",
+						"oneWriter",
+						"6106913a3d7c1c511e9094da"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/writers/allWriters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/writers/allWriters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"writers",
+						"allWriters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/writers/deleteWriter/6106913a3d7c1c511e9094da",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/writers/deleteWriter/6106913a3d7c1c511e9094da",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"writers",
+						"deleteWriter",
+						"6106913a3d7c1c511e9094da"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/writers/createArticle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Test Article 2\",\n    \"excerpt\": \"Description 2\",\n    \"text\": \"Test text 2\",\n    \"dateCreated\": \"28-10-2020\",\n    \"dateUpdated\": \"28-10-2020\",\n    \"writer\": \"610690db3d7c1c511e9094d8\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/writers/createArticle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"writers",
+						"createArticle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/writers/createArticle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Test Article\",\n    \"excerpt\": \"Description\",\n    \"text\": \"Test text\",\n    \"dateCreated\": \"26-10-2020\",\n    \"dateUpdated\": \"26-10-2020\",\n    \"writer\": \"610690db3d7c1c511e9094d8\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/writers/createArticle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"writers",
+						"createArticle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/writers/updateArticle/6106945d7029cc558662e64f",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Test Article 2\",\n    \"excerpt\": \"Description 2\",\n    \"text\": \"Test text 2\",\n    \"dateCreated\": \"28-10-2020\",\n    \"dateUpdated\": \"30-11-2020\",\n    \"writer\": \"610690db3d7c1c511e9094d8\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/writers/updateArticle/6106945d7029cc558662e64f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"writers",
+						"updateArticle",
+						"6106945d7029cc558662e64f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/writers/article/6106945d7029cc558662e64f",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/writers/article/6106945d7029cc558662e64f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"writers",
+						"article",
+						"6106945d7029cc558662e64f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/writers/articles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/writers/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"writers",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/writers/deleteArticle/61069434d4b2675561b09870",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/writers/deleteArticle/61069434d4b2675561b09870",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"writers",
+						"deleteArticle",
+						"61069434d4b2675561b09870"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/blogss/createBlog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Blog 2\",\n    \"articles\":[\"6106945d7029cc558662e64f\", \"610695ad09aded57536b8429\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/blogss/createBlog",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"blogss",
+						"createBlog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/blogss/updateBlog/6106959509aded57536b8427",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Blog test\",\n    \"articles\":[\"6106945d7029cc558662e64f\", \"610695ad09aded57536b8429\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/blogss/updateBlog/6106959509aded57536b8427",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"blogss",
+						"updateBlog",
+						"6106959509aded57536b8427"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/blogss/oneBlog/6106959509aded57536b8427",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/blogss/oneBlog/6106959509aded57536b8427",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"blogss",
+						"oneBlog",
+						"6106959509aded57536b8427"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/blogss/allBlogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/blogss/allBlogs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"blogss",
+						"allBlogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/blogss/deleteBlog/6106959509aded57536b8427",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/blogss/deleteBlog/6106959509aded57536b8427",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"blogss",
+						"deleteBlog",
+						"6106959509aded57536b8427"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/writers/updateBlogArticle/6106969a09aded57536b8433",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Blog test\",\n    \"articles\":[\"6106945d7029cc558662e64f\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/writers/updateBlogArticle/6106969a09aded57536b8433",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"writers",
+						"updateBlogArticle",
+						"6106969a09aded57536b8433"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/writers/deleteBlogArticles/6106945d7029cc558662e64f",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/writers/deleteBlogArticles/6106945d7029cc558662e64f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"writers",
+						"deleteBlogArticles",
+						"6106945d7029cc558662e64f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
